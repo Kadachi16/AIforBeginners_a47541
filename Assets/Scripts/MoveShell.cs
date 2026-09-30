@@ -6,6 +6,6 @@ public class MoveShell : MonoBehaviour
 
     void LateUpdate()
     {
-        this.transform.Translate(0, Time.deltaTime * (speed/2), Time.deltaTime * speed);
+        this.transform.Translate(0, 0, Time.deltaTime * speed);
     }
 }
