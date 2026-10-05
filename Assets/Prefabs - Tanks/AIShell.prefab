@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 7950983349410483}
   - component: {fileID: 7127159300152250674}
   - component: {fileID: 6210580659273402135}
-  - component: {fileID: 2752967708178639484}
-  - component: {fileID: 4207686277961619427}
+  - component: {fileID: -4030500721975184609}
   - component: {fileID: 4224793835999577990}
   - component: {fileID: 5123068400098650471}
   m_Layer: 0
-  m_Name: My Shell
+  m_Name: AIShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +117,7 @@ CapsuleCollider:
   m_Height: 0.5551694
   m_Direction: 2
   m_Center: {x: -8.73709e-16, y: -0.0009481609, z: 0.18851814}
---- !u!114 &2752967708178639484
+--- !u!114 &-4030500721975184609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,22 +126,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 131570041496542035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8af59a33aaaf5b4a8126953d1cb6022, type: 3}
+  m_Script: {fileID: 11500000, guid: f68a259a184bec244a936177e3017c65, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveShell
-  speed: 3
---- !u!114 &4207686277961619427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131570041496542035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a460c8290e014c3caa73ba461ac9a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shell
+  m_EditorClassIdentifier: Assembly-CSharp::AiShell
   explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}
 --- !u!114 &4224793835999577990
 MonoBehaviour:
@@ -178,7 +164,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
